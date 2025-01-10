@@ -1,0 +1,11 @@
+#train, valid and test data
+train: ./splitted_datasets/train/images
+val: ./splitted_datasets/valid/images
+test: ./splitted_datasets/test/images
+
+# number of clasees
+nc: 1
+
+#class names
+names:
+  - road_plate
