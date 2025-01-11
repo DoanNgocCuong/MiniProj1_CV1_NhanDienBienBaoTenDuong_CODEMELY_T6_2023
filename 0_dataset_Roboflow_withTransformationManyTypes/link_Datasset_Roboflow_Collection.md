@@ -27,3 +27,6 @@ Thư mục push lên:
 
 Nút "Continue" cho phép bạn tiếp tục sau khi hệ thống đã thực hiện các thay đổi trên annotations. Công cụ này thường gặp trong các nền tảng như Label Studio, Roboflow hoặc các phần mềm quản lý dữ liệu hình ảnh khác.
 ```
+
+
+Link: https://app.roboflow.com/on-ngc-cng/processed_bientenduong
