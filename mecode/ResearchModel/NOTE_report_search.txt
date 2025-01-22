@@ -1,0 +1,35 @@
+Week 1, em thử nghiệm: 
+1. pytesseract: https://youtu.be/p2wdxQzSks8?feature=shared
+- Nhận dạng văn bản ảnh tốt, biển báo nhận dạng không tốt. 
+
+2. easyocr: https://www.youtube.com/watch?v=n-8oCPjpEvM
+- Tốt hơn thử nghiệm 1. Không bằng Paddle OCR - a Tú
+- Test 2 ảnh của anh Tú chính xác tầm 80%: 
+    +, OF BEWARE MAINTENANCE VEHICLES
+    +, Please Jower you volume When you poss by residenlig] areos
+- Biển Đường Mạc Đĩnh Chi: chỉ nhận diện được chữ Đường. 
+- Biển Lý Thái Tổ có nhiều chữ: nhận diện tốt.
+
+3. mmocr: https://youtu.be/Snyu-o8ZdDk?feature=shared
+4. OCR-SAM (Optical Character Recognition + Segment Anything Model): https://www.youtube.com/watch?v=uJ6l91qUox8 
+- Thử nghiệm 3, 4 xài thư viện mmocr: https://mmocr.readthedocs.io/en/dev-1.x/get_started/install.html
+và https://github.com/open-mmlab/mmocr 
+Thư viện mmocr được xây dựng sẵn để: detection và recognition
+
+    - Text Detection Model (DBNet Mask R-CNN PANet PSENet TextSnake DRRG FCENet)
+    - và Text Recognition Model(ABINet ASTERCRNNMASTER NRTR RobustScanner SAR SATRN SVTR )
+- Đánh giá là model tiềm năng do clone được về máy, để thay đổi linh hoạt được các model Detection Và Recognition. 
+- Tuy nhiên lúc làm việc với MMOCR hay bị lỗi xung đột `mim install mmdet` với `mim install mmcls`
+gặp lỗi: ModuleNotFoundError: No module named 'mmcv._ext'
+- Khi thử nghiệm model mmocr cơ bản với ảnh 1, 2 của anh Tú: 
+vehicles main bewe of
+
+Đánh giá độ chính xác < easyocr cơ bản < paddle OCR hiện tại anh Tú. 
+- OCR-SAM (Optical Character Recognition + Segment Anything Model) thì thử nghiệm chưa thành công (gặp BUG)
+
+
+---->>> Chốt lại tuần 1 của em: 
+- Implementation tốt nhất là: easyocr cơ bản. 
+- 2 model tiềm năng đang thử nghiệm là mmocr, OCR-SAM do sự linh hoạt chọn lựa detection model và recognition model
+Implementation: mmocr cơ bản kết quả chưa tốt, còn OCR-SAM đang BUG: xung đột `mim install mmdet` với `mim install mmcls`
+gặp lỗi: ModuleNotFoundError: No module named 'mmcv._ext'

@@ -1,0 +1,3 @@
+ultralytics  # thư viện phân tích và học máy tiên tiến cho xử lý ảnh và video
+onnx
+opencv-python
